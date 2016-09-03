@@ -10,7 +10,10 @@ int main() {
 
   fval = ui - ival * 1.0;
   // `ival` is converted to double, then multiplied by `1.0`. The result is
-  // converted to `unsigned int`, then subtracted by `ui`. The result is
+  // converted to `unsigned int` ,((This part I am confused by, as the book says
+  //that when signedness differs and the type of the signed operand is larger,
+  //that the unsigned is converted to the type of the other operand.))
+  // then subtracted by `ui`. The result is
   // converted to `float`, then assigned to `fval`.
 
   dval = ui * fval;
